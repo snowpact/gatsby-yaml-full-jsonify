@@ -48,7 +48,7 @@ config: !jsonify |
   number: 2
   object: { key: "value" } 
   array: ["1", 2]
-data: !jsonify key: "value"
+data: !jsonify 'key: "value"'
 ```
 
 #### Returning object
