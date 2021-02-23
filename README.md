@@ -56,7 +56,7 @@ data: !jsonify key: "value"
 ```javascript
 {
   title: 'Blog post',
-  config: '{ "string": "value", "number": 2, "object": { "key": "value" }, "array": ["1", 2]}',
-  data: '{ "key": "value"}'
+  config: '{ \"string\": \"value\", \"number\": 2, \"object\": { \"key\": \"value\" }, \"array\": [\"1\", 2]}',
+  data: '{ \"key\": \"value\"}'
 }
 ```

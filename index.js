@@ -1,5 +1,6 @@
 const { dataToBadJson } = require("./utils/dataHelper");
 const { fixJson } = require("./utils/jsonFixer");
+const { isJson } = require("./utils/isJson");
 
 module.exports = function ({ node }, pluginOptions) {
   return {
@@ -10,7 +11,8 @@ module.exports = function ({ node }, pluginOptions) {
         const badJSON = dataToBadJson(data);
 
         try {
-          return fixJson(badJSON);
+          const fixedJson = fixJson(badJSON);
+          return isJson(fixedJson) ? fixedJson : null;
         } catch {
           return null;
         }

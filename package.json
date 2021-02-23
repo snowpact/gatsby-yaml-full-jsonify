@@ -1,7 +1,7 @@
 {
   "name": "gatsby-yaml-full-jsonify",
   "description": "Parses Objects into strings",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "author": "FR073N (https://github.com/FR073N)",
   "license": "MIT",
   "homepage": "https://github.com/snowpact/gatsby-transformer-yaml-jsonify/tree/master/packages/gatsby-yaml-full-jsonify#readme",
@@ -14,10 +14,7 @@
     "gatsby-plugin",
     "yaml"
   ],
-  "dependencies": {
-    "is-plain-object": "^5.0.0",
-    "unified": "^9.2.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "gatsby": "2.x",
     "gatsby-transformer-yaml-full": "0.3.x"
