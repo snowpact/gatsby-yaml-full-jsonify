@@ -12,7 +12,9 @@
   "keywords": [
     "gatsby",
     "gatsby-plugin",
-    "yaml"
+    "gatsby-transformer-plugin",
+    "yaml",
+    "json"
   ],
   "dependencies": {},
   "peerDependencies": {
