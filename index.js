@@ -1,9 +1,20 @@
+const { dataToBadJson } = require("./utils/dataHelper");
+const { fixJson } = require("./utils/jsonFixer");
+
 module.exports = function ({ node }, pluginOptions) {
   return {
-    tag: "!example",
+    tag: "!jsonify",
     options: {
       kind: "scalar",
-      construct: () => `Parent directory is ${node.dir}`,
+      construct: (data) => {
+        const badJSON = dataToBadJson(data);
+
+        try {
+          return fixJson(badJSON);
+        } catch {
+          return null;
+        }
+      },
     },
   };
 };
