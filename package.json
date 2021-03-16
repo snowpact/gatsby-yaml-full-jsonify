@@ -1,7 +1,7 @@
 {
   "name": "gatsby-yaml-full-jsonify",
   "description": "Parses object structure into a parseable JSON string in YAML file.",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "author": "FR073N (https://github.com/FR073N)",
   "license": "MIT",
   "homepage": "https://github.com/snowpact/gatsby-yaml-full-jsonify#readme",
@@ -16,6 +16,11 @@
     "yaml",
     "json"
   ],
+  "jest": {
+    "testPathIgnorePatterns": [
+      ".history"
+    ]
+  },
   "dependencies": {},
   "peerDependencies": {
     "gatsby": "2.x",
